@@ -1,0 +1,5 @@
+{%block body%}
+{%for i in ls%}
+   <li><a href="{%url 'wiki_title' i%}">{{i}}</a></li>
+{%endfor%}
+{%endblock%}

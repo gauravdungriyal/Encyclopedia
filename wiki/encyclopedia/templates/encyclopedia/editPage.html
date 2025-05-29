@@ -1,0 +1,7 @@
+{%block body%}
+<form action="{%url 'edit_page' title%}" method="post">
+    {%csrf_token%}
+    <textarea name="edited_text" id="" cols="50" rows="20">{{text}}</textarea>
+    <input type="submit">
+</form>
+{%endblock%}
